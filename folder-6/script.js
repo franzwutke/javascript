@@ -34,15 +34,16 @@ console.log(oddNumbers(9, 12));
 // TODO: Implement the charCount function
 
 
+function charCount(string, targetLetter) {
+    let count = 0;
 
-function charCount(string, letter) {
-    let count = {} 
-    
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] === targetLetter) {
+            count++;
+        }
+    }
+    return count;
 }
-    
-
-
-
 
 console.log(charCount("hello", "l"));
 // result should be: 2
